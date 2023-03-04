@@ -1,0 +1,42 @@
+body {
+  padding-top: 5rem;
+  background-color: #f1f1f1;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.lead {
+  color: black;
+  font-weight: 375;
+}
+
+.footer {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul.icons {
+  display: flex;
+  justify-content: left;
+}
+
+ul.icons {
+  list-style: none;
+}
+
+.icon-github-sign,
+.icon-linkedin-sign {
+  font-size: 3em;
+  padding: 1rem;
+}
+
+img {
+  border-radius: 8px;
+}
