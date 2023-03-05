@@ -40,3 +40,10 @@ ul.icons {
 img {
   border-radius: 8px;
 }
+
+@media (max-width: 767px) {
+  img {
+    width: 85%;
+  }
+    
+  }
