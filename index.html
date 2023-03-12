@@ -16,23 +16,6 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-
-      }
-    }
-  </style>
   <!-- Custom styles for this template -->
   <link href="./css/starter-template.css" rel="stylesheet">
 </head>
@@ -49,7 +32,7 @@
           <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./portfolio/index.html">Portfolio</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./CV_Henrik_Wik.pdf">PDF CV</a>
@@ -65,31 +48,51 @@
   </nav>
 
   <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="image object">
+            <img src="./images/IMG1.jpg" Width="250" alt="Profile Picture" />
+          </span>
+          <ul class="icons">
+            <li><a href="https://github.com/Henrik-Wik?tab=repositories" class="icon-github-sign">
+                <span class^="icon"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/henrik-wik-03b992177/" class="icon-linkedin-sign"></span></a></li>
+          </ul>
+        </div>
+    <div class="col-md-8 d-flex align-items-center">
 
-    <div class="starter-template">
-      <h1>About Me</h1><br>
-      <span class="image object">
-        <img src="./images/IMG1.jpg" Width="400" alt="Profile Picture" />
-      </span>
-      <br>
-      <br>
-      <p class="lead">Hello, my name is Henrik Wik.
-        <br>
       <p class="lead">
+        Hello, my name is Henrik Wik.
+        <br>
         I am a mathematics student from sweden who enjoys financial, and data analysis.
-        This website is a work in progress, but for now, you can find my projects on github and my CV as a PDF up top or
-        on my linkedin.
+        This website is a work in progress, but for now, you can find my projects on github and my CV as a PDF up top
+        or on my linkedin.
+      </p>
+    </div>
     </div>
 
-  </main><!-- /.container -->
+      <div id="gray-section" class="section">
+        <h1>Projects</h1><br>
+        <p class="lead"> Some of my projects.</p>
 
-  <footer>
-    <ul class="icons">
-      <li><a href="https://github.com/Henrik-Wik" class="icon-github-sign">
-          <span class^="icon"></span></a></li>
-      <li><a href="https://www.linkedin.com/in/henrik-wik-03b992177/" class="icon-linkedin-sign"></span></a></li>
-    </ul>
-  </footer>
+        <div class="post-card">
+          <h2>
+            <a href="./posts/degree_project.html">Stock Price Prediction Using Machine Learning</a>
+          </h2>
+          <h6>My degree project in mathematics where I use machine learning models in python to predict stock price.
+          </h6>
+          <!-- <span class="image object">
+          <img src="/images/degreeproject.jpg" Width="350" alt="Profile Picture" />
+        </span> -->
+        </div>
+        <div class="post-card">
+          <h2>
+            <a href="./posts/project_2.html">Project 2</a>
+          </h2>
+          <h6>Project 2 coming soon!</h6>
+        </div>
+      </div>
+  </main><!-- /.container -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

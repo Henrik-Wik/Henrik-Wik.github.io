@@ -1,11 +1,15 @@
 body {
   padding-top: 5rem;
+  background-color: #ffffff;
+}
+
+#gray-section {
   background-color: #f1f1f1;
 }
 
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+.row{
+  padding: 3rem 0rem;
+  text-align: left;
 }
 
 .lead {
@@ -13,28 +17,16 @@ body {
   font-weight: 375;
 }
 
-.footer {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-footer ul.icons {
-  display: flex;
-  justify-content: left;
-}
-
 ul.icons {
+  display: flex;
   list-style: none;
+  margin-top: 10px;
 }
 
 .icon-github-sign,
 .icon-linkedin-sign {
   font-size: 3em;
-  padding: 1rem;
+  padding: 1.3rem;
 }
 
 img {
@@ -47,4 +39,29 @@ img {
     height: auto !important;
   }
 
+}
+
+.post-card {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  border: 1px solid black;
+
+}
+
+.section{
+  padding: 700px 0;
+}
+
+a[href^="#"] {
+  transition: all 0.3s ease-in-out;
+}
+
+a[href^="#"]:hover {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
