@@ -1,15 +1,9 @@
-body {
-  padding-top: 5rem;
-  background-color: #ffffff;
-}
-
-#gray-section {
-  background-color: #f1f1f1;
-}
-
-.row{
-  padding: 3rem 0rem;
+.row {
   text-align: left;
+}
+
+.container {
+  padding: 10% 5rem;
 }
 
 .lead {
@@ -17,16 +11,16 @@ body {
   font-weight: 375;
 }
 
-ul.icons {
+.icons {
   display: flex;
   list-style: none;
-  margin-top: 10px;
 }
 
 .icon-github-sign,
+.icon-envelope,
 .icon-linkedin-sign {
   font-size: 3em;
-  padding: 1.3rem;
+  padding: 1rem;
 }
 
 img {
@@ -47,11 +41,8 @@ img {
   text-align: center;
   background: white;
   border: 1px solid black;
+  border-radius: 8px;
 
-}
-
-.section{
-  padding: 700px 0;
 }
 
 a[href^="#"] {
