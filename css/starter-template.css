@@ -3,7 +3,7 @@
 }
 
 .container {
-  padding: 10% 5rem;
+  padding: 15% 5rem;
 }
 
 .lead {
@@ -33,6 +33,10 @@ img {
     height: auto !important;
   }
 
+}
+
+.btn-dark a {
+  color: white;
 }
 
 .post-card {
