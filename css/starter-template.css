@@ -1,19 +1,19 @@
+.container {
+  padding: 15% 5rem;
+}
+
 .row {
   text-align: left;
 }
 
-.container {
-  padding: 15% 5rem;
-}
 
 .lead {
   color: black;
   font-weight: 375;
 }
 
-.icons {
-  display: flex;
-  list-style: none;
+img {
+  border-radius: 8px;
 }
 
 .icon-github-sign,
@@ -23,8 +23,14 @@
   padding: 1rem;
 }
 
-img {
-  border-radius: 8px;
+.btn-primary {
+  margin: 7.5%;
+  font-weight: 700;
+
+}
+
+.btn-primary a {
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -35,9 +41,6 @@ img {
 
 }
 
-.btn-dark a {
-  color: white;
-}
 
 .post-card {
   padding: 30px;
