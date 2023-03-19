@@ -33,14 +33,6 @@ img {
   color: white;
 }
 
-@media (max-width: 767px) {
-  img {
-    width: 85% !important;
-    height: auto !important;
-  }
-
-}
-
 
 .post-card {
   padding: 30px;
@@ -62,4 +54,66 @@ a[href^="#"]:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+.bg-wrapper {
+  position: relative;
+}
+
+#about::before,
+#portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#portfolio::before {
+  background-image: url('/images/bg2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about::before,
+#portfolio::before {
+  filter: grayscale(100%);
+  opacity: 0.1;
+}
+
+#experience {
+  background-color: #f3f3f3;
+  /* You can choose a different background color if you like */
+  padding: 2rem 0;
+}
+
+#experience h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#experience h3 {
+  margin-bottom: 0.5rem;
+}
+
+#experience h4 {
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  color: #6c757d;
+  /* You can choose a different color if you like */
+}
+
+#experience p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  img {
+    width: 85%;
+    height: auto;
+  }
+
 }
