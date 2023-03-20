@@ -1,15 +1,48 @@
 body {
-  background-color: #f1f1f1;
+  background-color: #252525;
   /* Change to your preferred color */
-}
-
-.header-white-text {
-  color: white !important;
 }
 
 .container {
   padding: 15% 5rem;
 }
+
+.custom-navbar {
+  background-color: #424242;
+}
+
+.custom-navbar a {
+  color: white;
+}
+
+.section-title {
+  margin-top: 2rem;
+}
+
+
+a:hover {
+  color: gray;
+}
+
+.about h {
+  padding-top: 1rem;
+}
+
+#about {
+  color: white;
+}
+
+.about-box {
+  background-color: #555555;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #555555;
+  position: relative;
+  color: white;
+}
+
+
 
 .row {
   text-align: left;
@@ -17,7 +50,7 @@ body {
 
 
 .lead {
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 375;
 }
 
@@ -29,19 +62,20 @@ img {
 .icon-envelope,
 .icon-linkedin-sign {
   font-size: 3em;
-  padding: 1rem;
-}
-
-.btn-primary {
-  margin: 7.5%;
-  font-weight: 700;
-
-}
-
-.btn-primary a {
+  margin: 1rem;
   color: white;
 }
 
+.icon {
+  color: white;
+}
+
+.btn-light {
+  margin: 5.5%;
+  font-weight: 500;
+  width: 40px;
+  height: 40px;
+}
 
 a[href^="#"] {
   transition: all 0.3s ease-in-out;
@@ -70,6 +104,14 @@ html {
   z-index: -1;
 }
 
+#about::before {
+  background-image: url('/images/bg3.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 #portfolio::before {
   background-image: url('/images/bg2.jpg');
   background-position: center center;
@@ -83,27 +125,30 @@ html {
   opacity: 0.1;
 }
 
-#portfolio{
-margin-bottom: -300px;
+#portfolio {
+  margin-bottom: -100px;
+  color: white;
 
 }
 
-#experience{
+#experience {
   margin-bottom: -400px;
 }
 
 .section-title {
   margin-bottom: 1rem;
+  color: white;
 }
 
 .experience-box,
 .education-box {
-  background-color: #f8f9fa;
+  background-color: #555555;
   padding: 2rem;
   margin-bottom: 1rem;
   border-radius: 8px;
-  border: 1px solid #dee2e6;
+  border: 1px solid #555555;
   position: relative;
+  color: white;
 }
 
 .experience-box h3,
@@ -131,16 +176,34 @@ margin-bottom: -300px;
   bottom: 0;
   left: -1rem;
   width: 4px;
-  background-color: #188bff;
+  background-color: #3172ff;
   /* Change the color as needed */
 }
 
-.project{
-  padding: 1rem;
+#experience,
+#education {
+  background-color: #353535;
+}
+
+.project {
+  padding: 3rem;
+}
+
+.project-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555555;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #555555;
+  position: relative;
+  color: white;
 }
 
 .project-img {
-  width: 80%;
+  width: 500px;
   height: auto;
   border-radius: 8px;
   display: block;
@@ -152,24 +215,23 @@ margin-bottom: -300px;
 }
 
 .project-caption {
-  width: 80%;
+  text-align: center;
+  height: 150px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: rgb(255, 255, 255);
+  padding: 2rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.project-caption h3 {
-  margin-top: 0;
-}
-
 .col-md-8:hover .project-caption {
   opacity: 1;
+  text-align: center;
 }
 
 a.project-link {
