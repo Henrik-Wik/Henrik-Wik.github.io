@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  padding: 15% 5rem;
+  padding: 10% 2rem;
 }
 
 .custom-navbar {
@@ -43,7 +43,6 @@ a:hover {
 }
 
 
-
 .row {
   text-align: left;
 }
@@ -71,10 +70,7 @@ img {
 }
 
 .btn-light {
-  margin: 5.5%;
   font-weight: 500;
-  width: 40px;
-  height: 40px;
 }
 
 a[href^="#"] {
