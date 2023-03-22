@@ -115,8 +115,12 @@ html {
   background-size: cover;
 }
 
-#about::before,
 #portfolio::before {
+  filter: grayscale(100%);
+  opacity: 0.4;
+}
+
+#about::before{
   filter: grayscale(100%);
   opacity: 0.1;
 }
