@@ -115,6 +115,61 @@ html {
   background-size: cover;
 }
 
+#education::before,
+#eperience::before {
+  background-image: url('/images/bg4.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  padding: 20px 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #555555;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline-date {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  left: 50%;
+  margin-left: -50px;
+  padding: 5px 0;
+  background-color: #555555;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.timeline-content {
+  padding: 0 20px;
+  margin-left: 50%;
+  background-color: #555555;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+
+
+#education::before,
 #about::before,
 #portfolio::before {
   filter: grayscale(100%);
