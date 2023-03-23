@@ -2,99 +2,240 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Jekyll v4.1.1">
-  <title>Henrik Wik - About me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Henrik Wik">
+    <title>Henrik Wik - Portfolio Website</title>
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
+    <!-- Custom styles for this template -->
+    <link href="./css/starter-template.css" rel="stylesheet">
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-
-      }
-    }
-  </style>
-  <!-- Custom styles for this template -->
-  <link href="./css/starter-template.css" rel="stylesheet">
 </head>
 
-<!-- fontawesome icons -->
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand">Henrik Wik</a>
-    <div class="navbar-expand" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./portfolio/index.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./CV_Henrik_Wik.pdf">PDF CV</a>
-        </li>
-      </ul>
-      <!-- take out for now
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    -->
-    </div>
-  </nav>
+    <header id="main-header">
+        <nav class="navbar navbar-expand-md fixed-top custom-navbar">
+            <a class="navbar-brand">Henrik Wik</a>
+            <div class="navbar-expand" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./CV_Henrik_Wik.pdf">PDF CV</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <main role="main" class="container">
+    <section id="about" class="bg-wrapper">
+        <div class="container" style="height: 100vh;">
+            <div class="about-box">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img src="./images/IMG1.jpg" width="350" alt="Profile Picture" />
+                        <h2 class="section-title">Henrik Wik</h2>
+                        <p class="lead">
+                            Bachelor's Student
+                            <br>Mälardalen University
+                        </p>
+                        <ul class="icons d-flex" style="margin-left: 82px;">
+                            <a href="https://github.com/Henrik-Wik?tab=repositories" class="icon-github-sign"></a>
+                            <a href="https://www.linkedin.com/in/henrik-wik-03b992177/" class="icon-linkedin-sign"></a>
+                            <a href="mailto:henrik.wik@outlook.com" class="icon-envelope"></a>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 align-content-start">
+                        <h2>About me</h2>
+                        <p class="lead">
+                            I am a mathematics student from Sweden who enjoys financial and data analysis.
+                            This website is a work in progress, but for now, you can find my projects on GitHub and my
+                            CV as a PDF up top or on my LinkedIn.
+                            <br>
+                            <br>
+                            I am a mathematics student from Sweden who enjoys financial and data analysis.
+                            This website is a work in progress, but for now, you can find my projects on GitHub and my
+                            CV as a PDF up top or on my LinkedIn.
+                        </p>
+                        <a href="./CV_Henrik_Wik.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+                    </div>
 
-    <div class="starter-template">
-      <h1>About Me</h1><br>
-      <span class="image object">
-        <img src="./images/IMG1.jpg" Width="400" alt="Profile Picture" />
-      </span>
-      <br>
-      <br>
-      <p class="lead">Hello, my name is Henrik Wik.
-        <br>
-      <p class="lead">
-        I am a mathematics student from sweden who enjoys financial, and data analysis.
-        This website is a work in progress, but for now, you can find my projects on github and my CV as a PDF up top or
-        on my linkedin.
-    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </main><!-- /.container -->
+    <section id="portfolio" class="bg-wrapper">
+        <div class="container">
+            <h1 class="section-title">Portfolio</h1><br>
+            <div class="row justify-content-center">
+                <div class="col-md-8 project">
+                    <div class="project-box">
+                        <a href="https://github.com/Henrik-Wik/maa043_stock_price_prediction" ; target="_blank">
+                            <img src="/images/SVR.png" alt="Project 1" class="project-img">
+                            <div class="project-caption">
+                                <h3>Bachelor's Thesis in Mathematics</h3>
+                                <p>In this project I am utilizing different machine learning models in order to predict
+                                    stock price.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 project">
+                    <div class="project-box">
+                        <a href="https://github.com/Henrik-Wik/SQL_Bikestore" ; target="_blank">
+                            <img src="/images/SQL Bikestores.png" alt="Project 2" class="project-img">
+                            <div class="project-caption">
+                                <h3>SQL Bike Stores</h3>
+                                <p>In this project I am using SQL and Power BI in order to create a sales dashboard from
+                                    the
+                                    Microsoft Bike Stores dataset.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 project">
+                    <div class="project-box">
+                        <a href="https://github.com/Henrik-Wik/ds_training_proj" ; target="_blank">
+                            <img src="/images/Tonnage.jpg" alt="Project 3" class="project-img">
+                            <div class="project-caption">
+                                <h3>Training and health analysis</h3>
+                                <p>In this project I am using my own collected training and health data,
+                                    and analyzing it in order to see my progress and how I could improve my training
+                                    further.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <ul class="icons">
-      <li><a href="https://github.com/Henrik-Wik" class="icon-github-sign">
-          <span class^="icon"></span></a></li>
-      <li><a href="https://www.linkedin.com/in/henrik-wik-03b992177/" class="icon-linkedin-sign"></span></a></li>
-    </ul>
-  </footer>
+    <section id="experience">
+        <div class="container py-5">
+            <h1 class="section-title">Experience</h1>
+            <div class="main-timeline">
+                <div class="timeline left">
+                    <div class="experience-box">
+                        <h3>Administrative Assistant</h3>
+                        <h4>Tele W AB</h4>
+                        <p>Jun. - Jul. 2022</p>
+                        <p>
+                            - Quote calculation for security system at KTH Solna.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline right">
+                    <div class="experience-box">
+                        <h3>Administrative Assistant</h3>
+                        <h4>Tele W AB</h4>
+                        <p>Jun. - Jul. 2019</p>
+                        <p>
+                            - Documentation & quote calculation for security system at KTH.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline left">
+                    <div class="experience-box">
+                        <h3>Assistant Technician</h3>
+                        <h4>Tele W AB</h4>
+                        <p>Oct. - Sept. 2017</p>
+                        <p>
+                            - Programming & installation of camera system at ICA Spånga.
+                            <br>
+                            - Drawing in CAD, documentation for security system.
+                            <br>
+                            - Cable installation for card reader system at Stockholm's University.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline right">
+                    <div class="experience-box">
+                        <h3>Assistant Technician</h3>
+                        <h4>Tele W AB</h4>
+                        <p>Oct. - Sept. 2017</p>
+                        <p>
+                            - Installation of card readers at KTH.
+                            <br>
+                            - Sorting and recycling of old card readers at KTH with assistant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="education">
+        <div class="container py-5">
+            <h1 class="section-title">Education</h1>
+            <div class="main-timeline">
+                <div class="timeline left">
+                    <div class="education-box">
+                        <h3>BSc in Mathematics/Applied Mathematics</h3>
+                        <h4>Mälardalen University</h4>
+                        <p>2021 - Present</p>
+                        <p>
+                            - Expected Graduation June 2023.
+                            <br>
+                            - Specialization in Financial Engineering.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline right">
+                    <div class="education-box">
+                        <h3>MScEng in Industrial Economics</h3>
+                        <h4>Mälardalen University</h4>
+                        <p>2016 - 2021</p>
+                        <p>
+                            - Unfinished.
+                            <br>
+                            - Specialization in Energy Engineering
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline left">
+                    <div class="education-box">
+                        <h3>High School Diploma</h3>
+                        <h4>Mälardalen University</h4>
+                        <p>2013 - 2016</p>
+                        <p>
+                            - Specialization in Science
+                            <br>
+                            - Electables were, Piano, Sound Engineering, Math 5, and English 7.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 
 </html>
